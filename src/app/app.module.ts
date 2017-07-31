@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { HttpModule} from '@angular/http';
+import { ROUTES } from './app.router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpModule} from '@angular/http';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule    
+    HttpModule,
+    ROUTES
   ],
   providers: [
     UserService,
